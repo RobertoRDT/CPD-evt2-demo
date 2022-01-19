@@ -21872,6 +21872,9 @@
                <place xml:id="Carrara">
                   <settlement type="corte">Carraria</settlement>
                   <placeName type="new">Carrara</placeName>
+                  <location>
+                    <geo>44.060122, 10.055262</geo>
+                  </location>
                   <district type="comune">Carrara</district>
                </place>
                <place xml:id="Casalechio">
@@ -23452,6 +23455,9 @@
                <place xml:id="Sarzana">
                   <settlement type="corte-località">Sarzana</settlement>
                   <placeName type="new">Sarzana</placeName>
+                  <location>
+                    <geo>44.112520, 9.959700</geo>
+                  </location>
                   <district type="comune">Sarzana</district>
                </place>
                <place xml:id="Sarzanello">
@@ -23533,6 +23539,9 @@
                <place xml:id="Soliera">
                   <settlement type="corte">Soleria</settlement>
                   <placeName type="new">Soliera</placeName>
+                  <location>
+                    <geo>44.239390, 10.127040</geo>
+                  </location>
                   <district type="comune">Fivizzano</district>
                </place>
                <place xml:id="SolieraLuna">
@@ -26425,9 +26434,42 @@
                </item>
             </list>
 
+         <!-- ########## Lista di <rs> nel testo ########## -->
+           
+           <list xml:id="RS">
+             
+             <item xml:id="Sarzanello2">
+               <placeName>castro Sarzane</placeName>
+               <note>A note about castro Sarzane.</note>
+             </item>
+             
+             <item xml:id="VernaciusGuilielmi2">
+               <persName><forename>Vernacius</forename> quondam <surname>Guilielmi</surname> de
+                 <placeName>Cantio</placeName></persName>
+               <note>A note about Vernacius quondam Guilielmi de Cantio.</note>
+             </item>
+             
+             <item xml:id="RamundinusGuidonis2">
+               <persName>Ramundinus quondam Guidonis de
+                              Opizo</persName>
+               <note>A note about Ramundinus quondam Guidonis de Opizo.</note>
+             </item>
+             
+             <item xml:id="BonavereMacognani2">
+               <persName>Bonavere quondam Macognani</persName>
+               <note>A note about Bonavere quondam Macognani.</note>
+             </item>
+             
+           </list>
+           
          </sourceDesc>
       </fileDesc>
-   </teiHeader>
+
+    <revisionDesc>
+      <change status="draft" when="2022-01" who="RRDT">Added experimental RS list and a few geographical 
+        coordinates.</change>
+    </revisionDesc>
+  </teiHeader>
 
    <!-- ############################ I testi ############################ -->
    <text xml:id="text">
@@ -26525,8 +26567,8 @@
               <body>
                   <div xml:id="CI_div">
                       <pb n="214v" xml:id="fol_214v"/>
-                      <p xml:id="CI_p_001" n="1">De <placeName ref="#Sarzanello">castro
-                              Sarzane</placeName><note place="foot" n="a" xml:id="CI_n_001"><term
+                      <p xml:id="CI_p_001" n="1">De <rs ref="#Sarzanello2">castro
+                              Sarzane</rs><note place="foot" n="a" xml:id="CI_n_001"><term
                                   xml:lang="latin">De castro Sarzane</term>
                               <emph>in inchiostro rosso.</emph></note>.</p>
                       <p xml:id="CI_p_002" n="2"><ptr target="#CI_st_001" facs="#st_214v_001"/> In eterni
@@ -26579,11 +26621,11 @@
                           infrascriptis et cum infrascriptis operariis, recipientibus pro se et omnibus
                           aliis <roleName>operariis de <placeName ref="#Sarzana">curte
                               Sarzane</placeName></roleName> et suo et eorum nomine per nos et nostros
-                          successores. Quorum <roleName>operariorum</roleName> nomina sunt hec: <persName
-                              ref="#VernaciusGuilielmi">Vernacius quondam Guilielmi de Cantio</persName>,
-                              <persName ref="#RamundinusGuidonis">Ramundinus quondam Guidonis de
-                              Opizo</persName>, <persName ref="#BonavereMacognani">Bonavere quondam
-                              Macognani</persName>, <persName ref="#CompagnonusBertoloto">Compagnonus de
+                          successores. Quorum <roleName>operariorum</roleName> nomina sunt hec: <rs
+                              ref="#VernaciusGuilielmi2">Vernacius quondam Guilielmi de Cantio</rs>,
+                              <rs ref="#RamundinusGuidonis2">Ramundinus quondam Guidonis de
+                              Opizo</rs>, <rs ref="#BonavereMacognani2">Bonavere quondam
+                              Macognani</rs>, <persName ref="#CompagnonusBertoloto">Compagnonus de
                               Bertoloto</persName>, <persName ref="#FormentinusRafanini">Formentinus
                               quondam Rafanini</persName>, <persName ref="#RiciusBottocii">Ricius quondam
                               Bottocii de <placeName ref="#Oliveto">Oliveto</placeName></persName>,
