@@ -22187,6 +22187,9 @@
           </place>
           <place xml:id="Fossato">
             <settlement type="località">Fossato</settlement>
+          <location>
+              <geo>44.189216999533635, 9.616452482457774</geo>
+            </location>
           </place>
           <place xml:id="Fotigero">
             <settlement type="località">Fotigero</settlement>
@@ -22374,7 +22377,10 @@
           </place>
           <place xml:id="Losio">
             <settlement type="località">Losio</settlement>
-          </place>
+          <location>
+               <geo>43.84424067506326, 10.507013561534237</geo>
+            </location>
+         </place>
           <place xml:id="Lotignano">
             <settlement type="località">Lotignano / Lutignana / Lotignana / Lutignano</settlement>
           </place>
